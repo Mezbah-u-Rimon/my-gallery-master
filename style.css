@@ -1,0 +1,103 @@
+.full-div-container {
+    display: grid;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.header-section {
+    width: 300px;
+    margin: auto;
+
+}
+
+.header-section-1 {
+    text-align: center;
+}
+
+.header-section-1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+
+.header-section-1 h3 {
+    font-size: 26px;
+    color: black;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.header-section-1 p {
+    margin-top: -10px;
+}
+
+.header-section-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.header-section-2 li {
+    list-style-type: none;
+}
+
+.header-section-2 li span {
+    font-size: 16px;
+    color: gray;
+}
+
+
+.image-1 img,
+.image-2 img,
+.image-3 img,
+.image-4 img,
+.image-5 img,
+.image-6 img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.image-1 {
+    grid-area: image-1;
+}
+
+.image-2 {
+    grid-area: image-2;
+}
+
+.image-3 {
+    grid-area: image-3;
+}
+
+.image-4 {
+    grid-area: image-4;
+}
+
+.image-5 {
+    grid-area: image-5;
+}
+
+.image-6 {
+    grid-area: image-6;
+}
+
+.container {
+    width: 800px;
+    display: grid;
+    gap: 20px;
+    margin-top: 50px;
+    grid-template-areas:
+        "image-1 image-2 image-2"
+        "image-3 image-3 image-4"
+        "image-5 image-6 image-4";
+}
+
+
+/* responsive layout */
+@media screen and (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+}
